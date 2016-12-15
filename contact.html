@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/eee66b70a8.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">COCCR</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">HELP</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="jumbotron contact">
+  <div class="container-fluid">
+  <h2>Committee Of Climate Change Research</h2>
+  <p>Fighting climate change with our advanced knowledge</p>
+</div>
+</div>
+<!-- Container (About Section) -->
+<div class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Ottawa, CA</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 12345678</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> email@something.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Set height and width with CSS -->
+<div class="container-fluid" ><center><h2>WE ARE HERE</h2></center></div>
+<div class="container-fluid" id="googleMap"  style="height:400px;"></div>
+
+<footer class="footer footer-color-black">
+                <div class="container-fluid">
+                    <div class="social-area  pull-right">
+                      <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                      <a href="https://twitter.com/?lang=zh-cn"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                      <a href="https://plus.google.com/"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+                      <a href="https://www.tumblr.com/"><i class="fa fa-tumblr-square" aria-hidden="true"></i></a>
+
+                    </div>
+                    <div class="copyright">
+                        © 2016  Committee Of Climate Change Research
+                    </div>
+                </div>
+</footer>
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(45.3496673, -75.7591438);
+
+function initialize() {
+var mapProp = {
+center:myCenter,
+zoom:15,
+scrollwheel:false,
+draggable:false,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Slab');
+
+body{
+  font-family: 'Lato', Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+h2{
+  font-family: 'Roboto Slab', Georgia,serif;
+}
+.navbar{
+border-radius: 0;
+margin: 0;
+color: #DDDDDD;
+}
+h2{
+  font-size: 37px;
+}
+
+.jumbotron.index{
+  background: url("img/4.jpg");
+  background-size: cover;
+  height: 350px;
+  color: #FFF;
+  letter-spacing: .3px;
+}
+
+.jumbotron.help{
+  background: url("img/14.png");
+  background-size: cover;
+  height: 350px;
+  color: #FFF;
+  letter-spacing: .3px;
+}
+
+.jumbotron.contact{
+  background: url("img/11.jpg");
+  background-size: cover;
+  height: 350px;
+  color: #FFF;
+  letter-spacing: .3px;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: #ddd;
+    position: relative;
+    margin: 70px 0 60px;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .footer-color-black {
+    margin-top: 60px;
+    background-color: #000;
+    color: #DDDDDD;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 13px 0;
+}
+.social-area{
+  font-size: 35px;
+}
+.copyright{
+  padding-top: 15px;
+}
+a:hover{
+  color: #150c5a;
+}
+
+  @media (max-width: 1400px) and (min-width: 901px){
+     .container-fluid {
+        width:900px;
+        margin: 0 auto;
+      }
+
+  }
