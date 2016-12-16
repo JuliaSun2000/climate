@@ -69,8 +69,10 @@
   </div>
 </div>
 <!-- Set height and width with CSS -->
-<div class="container-fluid" ><center><h2>WE ARE HERE</h2></center></div>
-  <div class="container-fluid" id="map" style="height:400px;"></div>
+<div class="container-fluid" ><center><h2>WE ARE HERE</h2></center><img class="container-fluid" src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
+&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
+&markers=color:red%7Clabel:C%7C40.718217,-73.998284
+&key=AIzaSyCSo-J0Fe8Qcnckty9R8-wQoQwnQp7amiA"></div>
 
 <footer class="footer footer-color-black">
                 <div class="container-fluid">
@@ -86,18 +88,5 @@
                     </div>
                 </div>
 </footer>
- <script>
-
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -75.7584289, lng: 45.3483057},
-    zoom: 17
-  });
-}
-
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-awUaUplbZ3uowfIFadm8mSL62L5s2fI&callback=initMap"
-        async defer></script>
 </body>
 </html>
